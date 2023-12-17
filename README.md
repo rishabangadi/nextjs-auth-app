@@ -12,16 +12,15 @@
 
 #### Login Page
 
-![Login Page](/images/login.png)
-<img src="/images/login.png" alt="Login Page" width="300" height="auto">
+<img src="/images/login.png" alt="Login Page" width="500" height="auto">
 
 #### SignUp Page
 
-![Signup Page](/images/signup.png)
+<img src="/images/signup.png" alt="Signup Page" width="500" height="auto">
 
 #### Profile Page
 
-![Signup Page](/images/profile.png)
+<img src="/images/profile.png" alt="Profile Page" width="500" height="auto">
 
 ## Getting Started
 
