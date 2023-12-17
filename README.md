@@ -13,6 +13,7 @@
 #### Login Page
 
 ![Login Page](/images/login.png)
+<img src="/images/login.png" alt="Login Page" width="300" height="auto">
 
 #### SignUp Page
 
