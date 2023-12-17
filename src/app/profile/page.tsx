@@ -10,7 +10,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { ScaleLoader } from "react-spinners";
 
-export const UserProfilePage = () => {
+export default function UserProfilePage() {
   const [user, setUser] = useState({
     id: "",
     username: "",
@@ -60,6 +60,4 @@ export const UserProfilePage = () => {
       </div>
     </div>
   );
-};
-
-export default UserProfilePage;
+}

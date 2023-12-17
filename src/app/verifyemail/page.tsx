@@ -9,23 +9,22 @@ export default function VerifyEmailPage() {
   const [token, setToken] = useState("");
   const router = useRouter();
 
-  const verifyEmail = async function (token: string) {
-    try {
-      const response = await axios.post("/api/users/verifyemail", { token });
-      toast.success("Email Verified");
-      router.push("/profile");
-    } catch (error) {
-      console.error("Email verification failed", error);
-      toast.error("Email Verification Failed");
-    } finally {
-    }
-  };
-
   useEffect(() => {
+    const verifyEmail = async function (token: string) {
+      try {
+        const response = await axios.post("/api/users/verifyemail", { token });
+        toast.success("Email Verified");
+        router.push("/profile");
+      } catch (error) {
+        console.error("Email verification failed", error);
+        toast.error("Email Verification Failed");
+      } finally {
+      }
+    };
     const urlToken = window.location.search.split("=")[1];
     setToken(urlToken || "");
     if (urlToken?.length > 0) verifyEmail(urlToken);
-  }, []);
+  }, [router]);
 
   return (
     <>
